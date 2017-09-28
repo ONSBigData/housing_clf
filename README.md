@@ -1,8 +1,8 @@
 
-# Classification of gated communities and caravans within Zoopla Data
+## Classification of gated communities and caravans within Zoopla Data
 
 
-## Overview
+### Overview
 
 At the top of the file there should be a short introduction and/ or overview that explains **what** the project is.
 
@@ -12,10 +12,10 @@ At the top of the file there should be a short introduction and/ or overview tha
 	* What purpose does it serve?
 
 
-## What does it do?
+### What does it do?
 If relevant, provide a more detailed explanation of what the the project/app/library does.
 
-## How do I use it?
+### How do I use it?
 
 ### Requirements/Pre-requisites
 List any requirements for using this project, like dependencies and version. Remove this section if it is not needed.
@@ -43,18 +43,22 @@ Example JSON file
 }
 ```
 
-## Useful links
+### Useful links
 
 
-## Contributors
+### Contributors
 
 [Kim Brett](https://github.com/k1br)
 
+
 [Theodore Manassis](https://github.com/mamonu)
+
 
 and based on a pilot [study](https://github.com/gaskyk/housing-websites) from [Karen Gask](https://github.com/gaskyk)
 
+
 working for the [Office for National Statistics Big Data project](https://www.ons.gov.uk/aboutus/whatwedo/programmesandprojects/theonsbigdataproject)
+
 
 ## LICENSE
 
