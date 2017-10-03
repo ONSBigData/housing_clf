@@ -13,7 +13,8 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 
 ### What does it do?
-If relevant, provide a more detailed explanation of what the the project/app/library does.
+
+ML! 
 
 ### How do I use it?
 
