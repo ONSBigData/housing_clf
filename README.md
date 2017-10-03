@@ -43,7 +43,7 @@ Example CSV imput file:
 
 ```
 "label","text"
-"We are delighted to offer for sale this truly immaculately presented three double bedroom home which has recently undergone a re-styling by the current owners including bathrooms, kitchen/breakfast room, flooring & shutters."
+1,"We are delighted to offer for sale this BLAH BLAH immaculately presented 2 bedroom home which has recently undergone a re-styling by the current owners including bathrooms, kitchen & shutters."
 
 ```
 
