@@ -39,7 +39,7 @@ Each property type (caravan or gated community) are split up in to different fol
 ### Data
 
 
-Example CSV imput file:
+Example CSV input file:
 
 ```
 "label","text"
