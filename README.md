@@ -5,7 +5,7 @@
 ### Overview
 The project seeks to use Zoopla data to help to identify properties that are either not recorded or are inconsistently recorded in other data sets. This is of particular interest as it will be helpful to supplement the Address Register for such properties and will be a useful resource for field staff
 
-For this project, the property types of interest are:
+* For this project, the property types of interest are:
     * Caravans, and whether these are residential or holiday
     * Gated communities
 
