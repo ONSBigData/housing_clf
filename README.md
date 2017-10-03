@@ -37,15 +37,14 @@ Each property type (caravan or gated community) are split up in to different fol
 
 
 ### Data
-For example when no data are provided in the project, could be helpful to provide how the data should be structured in order to try the model.
-Remove this section if it is not needed.
 
-Example JSON file
+
+Example CSV imput file:
+
 ```
-{
-  "user_id": 0001,
-  "profession": "Data Scientist"
-}
+"label","text"
+"We are delighted to offer for sale this truly immaculately presented three double bedroom home which has recently undergone a re-styling by the current owners including bathrooms, kitchen/breakfast room, flooring & shutters."
+
 ```
 
 ### Useful links
