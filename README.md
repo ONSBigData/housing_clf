@@ -21,18 +21,19 @@ This code has been made available for research purposes. You can pull the reposi
 
 
 ### Requirements/Pre-requisites
-1. Access to Zoopla data 
-2. Python 3.0  preferably from an Anaconda distribution so numpy/scipy are properly installed.
-3. Machine Learning modules :scikit-learn , scikit-spark 
-4. NLP modules : NLTK , gensim, spacY
+
+* Access to Zoopla data 
+* Python 3.0  preferably from an Anaconda distribution so numpy/scipy are properly installed.
+* Machine Learning modules :scikit-learn , scikit-spark 
+* NLP modules : NLTK , gensim, spacY
 
 
 ### How to run the project locally
 
 
-1) git clone project
-2) provide data in format described below
-3) run the appropriate jupyter notebook
+* git clone project
+* provide data in format described below
+* run the appropriate jupyter notebook
 
 ### Project Structure
 Each property type (caravan or gated community) are split up in to different folders for ease of insight.
