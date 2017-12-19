@@ -3,28 +3,39 @@ head(df)
 sapply(df, class)
 df$lat<- as.numeric(as.character(df$lat))
 df$long<- as.numeric(as.character(df$long))
+df$ID <- seq.int(nrow(df))
+
+namesuk <- read.csv("/home/Index_of_Place_Names_in_Great_Britain_July_2016.csv")[ ,c('lad15cd', 'lad15nm')]
+head(namesuk)
+names(namesuk)[1]<-"laua"
+df2 <- merge(df, namesuk, by='laua', all.x=TRUE)
+head(df2)
+
+df2 <-df2[!duplicated(df2$ID), ]
+
 
 library(leaflet)
 library(shiny)
+library(shinydashboard)
 
 
 shinyApp(
-  ui = fluidPage(
-    titlePanel("Caravans in A"),
-    
-    sidebarLayout(
-       # Show a plot of the generated distribution
-      mainPanel(
-        leafletOutput("MapPlot1", width = "100%", height = 800)
-      ),
-      # Sidebar with a slider input
-      sidebarPanel(
-        "Side panel will contain a drop down menu to choose the area as well as a section of analysis e.g. charts", 
-        "Will check different side panel",
-        plotOutput(outputId = "distPlot")
-      ),
-    
-      
+  ui = dashboardPage(
+    dashboardHeader(title = "Caravans in A"),
+    dashboardSidebar("Side panel will contain a drop down menu to choose the area as well as a section of analysis e.g. charts", br(), br(),
+                     "Will check different side panel options"
+                     #selectInput("property", "Property type:",
+                     #            list("Caravan" = c("Residential caravan" = "res_caravan", 
+                     #                 "Holiday caravan" = "hol_caravan"), 
+                     #                 "Gated community" = "gated")),
+                     ),
+    dashboardBody(box(title = "Map", status = "primary", solidHeader = TRUE,
+                      collapsible = TRUE, leafletOutput("MapPlot1", width = "100%", height = 800)),
+                  box(title = "Inputs", status = "warning", collapsible = TRUE, solidHeader = TRUE, plotOutput(outputId = "distPlot"),  sliderInput("slider", "Slider input:", 1, 100, 50)),
+                  box(valueBox(10 * 2, "Percent in area", icon = icon("percent")),
+                  valueBox(10 * 2, "Proprty type", icon = icon("home")), valueBox(10 * 2, "Average price", icon = icon("line-chart")))
+                  
+                  
     )
   ),
   
@@ -55,7 +66,7 @@ shinyApp(
       
       hist(x, breaks = bins, col = "#75AADB", border = "white",
            xlab = "test",
-           main = "Histogram of price- just test to see if i could add plot here")
+           main = "Histogram of price- test to see if I could add plot here")
       
     })
   },
